@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal academic portfolio and professional profile.">
+  <title>Personal Portfolio | Your Name</title>
+  <style>
+    :root {
+      --ink: #18312f;
+      --muted: #61736f;
+      --accent: #2f766b;
+      --accent-light: #e7f1ed;
+      --paper: #fbfcfa;
+      --line: #dce6e1;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      background: rgba(251,252,250,.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 800; letter-spacing: -.04em; text-decoration: none; }
+    .navlinks { display: flex; gap: 25px; flex-wrap: wrap; }
+    .navlinks a { text-decoration: none; color: var(--muted); font-size: .92rem; }
+    .navlinks a:hover { color: var(--accent); }
+    .hero { padding: 92px 0 82px; }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: 800; }
+    h1 { font-size: clamp(2.7rem, 7vw, 5.2rem); line-height: 1.04; letter-spacing: -.065em; max-width: 780px; margin: 18px 0; }
+    .hero p { max-width: 680px; color: var(--muted); font-size: 1.12rem; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn { display: inline-block; padding: 11px 18px; border-radius: 999px; text-decoration: none; font-weight: 700; border: 1px solid var(--accent); }
+    .btn.primary { color: white; background: var(--accent); }
+    .btn.secondary { color: var(--accent); background: transparent; }
+    section { padding: 68px 0; border-top: 1px solid var(--line); }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 30px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.045em; margin: 5px 0; }
+    .section-intro { color: var(--muted); max-width: 560px; margin: 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    .card { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 25px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.12rem; }
+    .card p { color: var(--muted); margin: 8px 0 0; }
+    .meta { color: var(--accent); font-size: .82rem; font-weight: 800; letter-spacing: .04em; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .chip { background: var(--accent-light); color: #285d54; padding: 8px 13px; border-radius: 999px; font-size: .9rem; font-weight: 650; }
+    .feature { background: #f0f5f1; border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
+    .feature p { color: var(--muted); }
+    .contact { display: flex; align-items: center; justify-content: space-between; gap: 25px; flex-wrap: wrap; }
+    footer { padding: 28px 0; color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); }
+    @media (max-width: 680px) {
+      .navlinks { gap: 12px; }
+      .navlinks a { font-size: .82rem; }
+      .hero { padding: 68px 0 58px; }
+      .grid { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">ANA MARIEL VILLOCINO<span style="color:#2f766b">.</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div class="eyebrow">Academic Portfolio · Biology · Ecology</div>
+      <h1>Curious about life, ecosystems, and the natural world.</h1>
+      <p>
+        Hello, I'm <strong>Ana Mariel Villocino</strong> — a Biology student with an academic
+        focus in Ecology. I'm interested in biodiversity, marine ecosystems, and
+        research that supports the understanding and conservation of natural resources.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore my work</a>
+        <a class="btn secondary" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">01 / About</div><h2>A little about me</h2></div>
+        </div>
+        <p class="section-intro">
+          My academic interests center on ecology and the relationships between
+          organisms and their environments. Through research and field-based activities,
+          I have developed an appreciation for careful observation, reliable data
+          collection, and communicating scientific findings clearly.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">02 / Academic background</div><h2>Education</h2></div>
+        </div>
+        <div class="card">
+          <div class="meta">UNDERGRADUATE STUDIES</div>
+          <h3>Bachelor of Science in Biology — Major in Ecology</h3>
+          <p>Pamantasan ng Lungsod ng Maynila (PLM)</p>
+          <p><em>Graduated: 2025</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">03 / Research experience</div><h2>Research & academic work</h2></div>
+        </div>
+        <div class="feature">
+          <div class="meta">UNDERGRADUATE THESIS</div>
+          <h3>Ecological Assessment of Marine Macrophytes and its Associated Epiphytes in the Seagrass Meadows of Balaki Island, Infanta, Pangasinan</h3>
+          <p>
+            Research focused on documenting marine macrophytes and associated
+            epiphytes in the intertidal seagrass meadows of Balaki Island. The work
+            involves ecological field assessment, species documentation, and the
+            interpretation of ecological observations.
+          </p>
+          <p><strong>Research areas:</strong> Seagrass ecology · Marine macrophytes · Epiphytes · Coastal ecosystems</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">04 / Capabilities</div><h2>Skills & competencies</h2></div>
+          <p class="section-intro">A selection of research and professional skills developed through academic work.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Research & fieldwork</h3>
+            <div class="skills">
+              <span class="chip">Ecological field sampling</span>
+              <span class="chip">Quadrat and transect methods</span>
+              <span class="chip">Marine macrophyte documentation</span>
+              <span class="chip">Species identification</span>
+              <span class="chip">Water-quality measurements</span>
+              <span class="chip">Seagrass assessment</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Data & scientific work</h3>
+            <div class="skills">
+              <span class="chip">Ecological data organization</span>
+              <span class="chip">Biodiversity indices</span>
+              <span class="chip">Percent-cover analysis</span>
+              <span class="chip">Data interpretation</span>
+              <span class="chip">Scientific writing</span>
+              <span class="chip">Literature research</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Communication & collaboration</h3>
+            <div class="skills">
+              <span class="chip">Technical documentation</span>
+              <span class="chip">Research presentation</span>
+              <span class="chip">Team collaboration</span>
+              <span class="chip">Attention to detail</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Digital skills</h3>
+            <div class="skills">
+              <span class="chip">Microsoft Word</span>
+              <span class="chip">Microsoft Excel</span>
+              <span class="chip">Microsoft PowerPoint</span>
+              <span class="chip">Online research tools</span>
+              <span class="chip">Digital documentation</span>
+              <span class="chip">Spreadsheet data organization</span>
+            </div>
+            <p><em>Software-specific skills can be added once confirmed.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact">
+        <div>
+          <div class="eyebrow">05 / Contact</div>
+          <h2>Let's connect.</h2>
+          <p class="section-intro">For academic opportunities, collaboration, or professional inquiries.</p>
+        </div>
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:amrvillocino13@gmail.com">amrvillocino13@gmail.com</a></p>
+          <p><strong>Location:</strong> Philippines</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Ana Mariel Villocino. Personal academic portfolio.</div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
